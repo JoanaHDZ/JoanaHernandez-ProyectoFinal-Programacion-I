@@ -5,37 +5,34 @@
 package joanahernandez_proyectofinal_programacion1;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+import java.util.*;
 /**
  *
  * @author joana
  */
+
 public class Cine {
-    private List<String> peliculas;
-    private List<String> horarios;
+    private Map<String, List<String>> peliculasConHorarios;
 
     public Cine() {
-        peliculas = new ArrayList<>();
-        horarios = new ArrayList<>();
+        peliculasConHorarios = new LinkedHashMap<>(); // Mantener el orden de inserción
         generarPeliculasYHorarios();
     }
 
     private void generarPeliculasYHorarios() {
-        String[] peliculasBase = {"Accion Explosiva", "Romance en Paris", "Terror en la Noche", "Comedia Divertida", "Fantasía epica"};
-        Random random = new Random();
+        String[] peliculasBase = {"La Sustancia", "Alien: Romulus", "Deadpool & Wolverine", "La Idea De Ti", "Robot Salvaje"};
+        String[] horariosBase = {"12:00 PM", "3:00 PM", "6:00 PM", "9:00 PM"};
 
-        for (int i = 0; i < 3; i++) {
-            peliculas.add(peliculasBase[random.nextInt(peliculasBase.length)]);
+        for (String pelicula : peliculasBase) {
+            peliculasConHorarios.put(pelicula, Arrays.asList(horariosBase));
         }
-        horarios.add("12:00 PM");
-        horarios.add("3:00 PM");
-        horarios.add("6:00 PM");
-        horarios.add("9:00 PM");
     }
 
     public List<String> getPeliculas() {
-        return peliculas;
+        return new ArrayList<>(peliculasConHorarios.keySet());
+    }
+
+    public List<String> getHorarios(String pelicula) {
+        return peliculasConHorarios.getOrDefault(pelicula, Collections.emptyList());
     }
 }
-
-
