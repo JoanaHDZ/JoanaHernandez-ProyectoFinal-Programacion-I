@@ -12,24 +12,41 @@
             </test-roots>
         </data>
         <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>argumentos</word>
             <word>asientos</word>
             <word>Clase</word>
+            <word>comandos</word>
             <word>compra</word>
+            <word>contiene</word>
             <word>disponibles</word>
             <word>dulceria</word>
+            <word>ejecuta</word>
+            <word>flujo</word>
+            <word>funcionalidades</word>
             <word>gestiona</word>
+            <word>gráfica</word>
             <word>horarios</word>
             <word>incluyendo</word>
             <word>informacion</word>
+            <word>interactuando</word>
+            <word>interfaz</word>
             <word>las</word>
             <word>los</word>
+            <word>línea</word>
+            <word>Metodo</word>
             <word>pago</word>
+            <word>pasados</word>
             <word>peliculas</word>
+            <word>por</word>
             <word>procesamiento</word>
+            <word>programa</word>
             <word>puntos</word>
             <word>que</word>
             <word>sala</word>
+            <word>sistema</word>
             <word>sus</word>
+            <word>través</word>
+            <word>una</word>
             <word>usuario</word>
         </spellchecker-wordlist>
     </configuration>
